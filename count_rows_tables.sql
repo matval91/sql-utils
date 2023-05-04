@@ -1,5 +1,5 @@
 -- This query allows to store in a database the name of all the tables and their rows
-DROP TABLE tables_rows;
+DROP TABLE IF EXISTS tables_rows;
 CREATE TABLE tables_rows(table_name VARCHAR(20), n_rows INT);
 INSERT INTO tables_rows
 SELECT table_name, table_rows
